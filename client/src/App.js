@@ -23,7 +23,7 @@ const App = () => {
     await axios
       .get(
         process.env.REACT_APP_NODE_ENV === "production"
-          ? "https://owen-wilson-wow-api.herokuapp.com/wows/random"
+          ? "https://wow-generator-jkh.herokuapp.com/wows/random"
           : "http://localhost:4000/wows/random"
       )
       .then((res) => res.data)
@@ -55,10 +55,10 @@ const App = () => {
         <p>
           <b>
             <a
-              href="https://owen-wilson-wow-api.herokuapp.com"
+              href="https://wow-generator-jkh.herokuapp.com"
               rel="noreferrer noopener"
             >
-              owen-wilson-wow-api.herokuapp.com
+              wow-generator-jkh.herokuapp.com
             </a>
           </b>{" "}
           is a free JSON API for actor Owen Wilson's "wow" exclamations in
@@ -117,8 +117,8 @@ const App = () => {
       <p>Retrieve a random "wow" in JSON format.</p>
       <pre>
         <code className="request get">
-          <a href="https://owen-wilson-wow-api.herokuapp.com/wows/random">
-            https://owen-wilson-wow-api.herokuapp.com/wows/random
+          <a href="https://wow-generator-jkh.herokuapp.com/wows/random">
+            https://wow-generator-jkh.herokuapp.com/wows/random
           </a>
         </code>
       </pre>
@@ -173,8 +173,8 @@ const App = () => {
       <p>Retrieve a specific number of random "wow" results.</p>
       <pre>
         <code className="request get">
-          <a href="https://owen-wilson-wow-api.herokuapp.com/wows/random?results=5">
-            https://owen-wilson-wow-api.herokuapp.com/wows/random?results=5
+          <a href="https://wow-generator-jkh.herokuapp.com/wows/random?results=5">
+            https://wow-generator-jkh.herokuapp.com/wows/random?results=5
           </a>
         </code>
       </pre>
@@ -182,8 +182,8 @@ const App = () => {
       <p>Retrieve a random "wow" from a specific year.</p>
       <pre>
         <code className="request get">
-          <a href="https://owen-wilson-wow-api.herokuapp.com/wows/random?year=2011">
-            https://owen-wilson-wow-api.herokuapp.com/wows/random?year=2011
+          <a href="https://wow-generator-jkh.herokuapp.com/wows/random?year=2011">
+            https://wow-generator-jkh.herokuapp.com/wows/random?year=2011
           </a>
         </code>
       </pre>
@@ -191,8 +191,8 @@ const App = () => {
       <p>Retrieve a random "wow" by the name of the movie it appears in.</p>
       <pre>
         <code className="request get">
-          <a href="https://owen-wilson-wow-api.herokuapp.com/wows/random?movie=zoolander">
-            https://owen-wilson-wow-api.herokuapp.com/wows/random?movie=zoolander
+          <a href="https://wow-generator-jkh.herokuapp.com/wows/random?movie=zoolander">
+            https://wow-generator-jkh.herokuapp.com/wows/random?movie=zoolander
           </a>
         </code>
       </pre>
@@ -200,8 +200,8 @@ const App = () => {
       <p>Retrieve a random "wow" from a movie with a particular director.</p>
       <pre>
         <code className="request get">
-          <a href="https://owen-wilson-wow-api.herokuapp.com/wows/random?director=wes%20anderson">
-            https://owen-wilson-wow-api.herokuapp.com/wows/random?director=wes%20anderson
+          <a href="https://wow-generator-jkh.herokuapp.com/wows/random?director=wes%20anderson">
+            https://wow-generator-jkh.herokuapp.com/wows/random?director=wes%20anderson
           </a>
         </code>
       </pre>
@@ -209,8 +209,8 @@ const App = () => {
       <p>Retrieve a random "wow" by the number of its occurrence in a movie.</p>
       <pre>
         <code className="request get">
-          <a href="https://owen-wilson-wow-api.herokuapp.com/wows/random?wow_in_movie=2">
-            https://owen-wilson-wow-api.herokuapp.com/wows/random?wow_in_movie=2
+          <a href="https://wow-generator-jkh.herokuapp.com/wows/random?wow_in_movie=2">
+            https://wow-generator-jkh.herokuapp.com/wows/random?wow_in_movie=2
           </a>
         </code>
       </pre>
@@ -222,8 +222,8 @@ const App = () => {
       </p>
       <pre>
         <code className="request get">
-          <a href="https://owen-wilson-wow-api.herokuapp.com/wows/random?results=10&sort=movie&direction=desc">
-            https://owen-wilson-wow-api.herokuapp.com/wows/random?results=10&sort=movie&direction=desc
+          <a href="https://wow-generator-jkh.herokuapp.com/wows/random?results=10&sort=movie&direction=desc">
+            https://wow-generator-jkh.herokuapp.com/wows/random?results=10&sort=movie&direction=desc
           </a>
         </code>
       </pre>
@@ -234,8 +234,8 @@ const App = () => {
       </p>
       <pre>
         <code className="request get">
-          <a href="https://owen-wilson-wow-api.herokuapp.com/wows/ordered/0">
-            https://owen-wilson-wow-api.herokuapp.com/wows/ordered/0
+          <a href="https://wow-generator-jkh.herokuapp.com/wows/ordered/0">
+            https://wow-generator-jkh.herokuapp.com/wows/ordered/0
           </a>
         </code>
       </pre>
@@ -246,8 +246,8 @@ const App = () => {
       </p>
       <pre>
         <code className="request get">
-          <a href="https://owen-wilson-wow-api.herokuapp.com/wows/ordered/3-7">
-            https://owen-wilson-wow-api.herokuapp.com/wows/ordered/3-7
+          <a href="https://wow-generator-jkh.herokuapp.com/wows/ordered/3-7">
+            https://wow-generator-jkh.herokuapp.com/wows/ordered/3-7
           </a>
         </code>
       </pre>
@@ -255,8 +255,8 @@ const App = () => {
       <p>Retrieve all names of movies in which Owen Wilson says "wow."</p>
       <pre>
         <code className="request get">
-          <a href="https://owen-wilson-wow-api.herokuapp.com/wows/movies">
-            https://owen-wilson-wow-api.herokuapp.com/wows/movies
+          <a href="https://wow-generator-jkh.herokuapp.com/wows/movies">
+            https://wow-generator-jkh.herokuapp.com/wows/movies
           </a>
         </code>
       </pre>
@@ -264,8 +264,8 @@ const App = () => {
       <p>Retrieve all directors of movies in which Owen Wilson says "wow."</p>
       <pre>
         <code className="request get">
-          <a href="https://owen-wilson-wow-api.herokuapp.com/wows/directors">
-            https://owen-wilson-wow-api.herokuapp.com/wows/directors
+          <a href="https://wow-generator-jkh.herokuapp.com/wows/directors">
+            https://wow-generator-jkh.herokuapp.com/wows/directors
           </a>
         </code>
       </pre>
